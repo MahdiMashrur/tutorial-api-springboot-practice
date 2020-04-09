@@ -30,7 +30,7 @@ public class TutorialService  {
 		 return tutorials;
 	}
 	
-	public void addTutorial(Tutorial tutorial) {
+	public void createTutorial(Tutorial tutorial) {
 		repository.save(tutorial);
 	}
 	
