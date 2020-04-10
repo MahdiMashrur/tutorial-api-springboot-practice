@@ -27,6 +27,11 @@ public class TutorialController {
 		return tutorialService.getAllTutorials();
 	}
 	
+	@GetMapping("/tutorials/published")
+	public List<Tutorial> getPublishedTutorials() {
+		return tutorialService.getAllTutorialsPublished();
+	}
+	
 	@GetMapping("/tutorials/{id}")
 	public  Tutorial  getTutorial(@PathVariable String id ) {
 		return tutorialService.getTutorial(id);
